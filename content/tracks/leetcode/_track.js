@@ -1,0 +1,31 @@
+Game.registerTrack({
+  id: 'leetcode',
+  title: 'Algoritmos & LeetCode',
+  icon: '⚡',
+  color: '#2dd4bf',
+  order: 2,
+  character: 'lia',
+  characterRole: 'Entrevistadora · Big Tech',
+  description: 'Estruturas de dados e padrões de resolução para entrevistas: complexidade, grafos, programação dinâmica e código testado com desempenho.',
+  units: [
+    { id: 'fundamentos', title: 'Fundamentos', description: 'Big-O e o custo real das operações em Python.' },
+    { id: 'arrays', title: 'Arrays & strings', description: 'Hash map, dois ponteiros, janela deslizante, somas de prefixo, intervalos.' },
+    { id: 'estruturas', title: 'Estruturas de dados', description: 'Pilhas, busca binária, listas ligadas, árvores, heaps e tries.' },
+    { id: 'grafos', title: 'Grafos', description: 'BFS, DFS, ordenação topológica, Union-Find e caminhos mínimos.' },
+    { id: 'tecnicas', title: 'Técnicas', description: 'Backtracking, programação dinâmica e manipulação de bits.' },
+    { id: 'entrevistas', title: 'Entrevistas', description: 'Simulações no formato de entrevista, do júnior ao sênior.' },
+  ],
+  intro: [
+    'E aí! Aqui é a trilha de **algoritmos para entrevistas** — nela eu faço o papel de entrevistadora.',
+    'Primeiro vemos os padrões (hash map, dois ponteiros, janela deslizante…), depois você encara problemas com testes de verdade — incluindo testes de **desempenho**.',
+  ],
+  lines: {
+    ask: ['Qual você escolheria?', 'Rápido: qual é a resposta?', 'Me convença com a alternativa certa.'],
+    askOpen: ['Explica seu raciocínio. Em entrevista, pensar em voz alta conta muito.', 'Como você explicaria isso para o time?'],
+    askCode: ['Pode codar. Pense nos casos de borda antes de enviar.', 'Sua vez. Comece pela força bruta se precisar, depois otimize.'],
+    correct: ['Boa. Isso passaria na entrevista.', 'Correto. Gostei do raciocínio.', 'Ótimo — limpo e eficiente.', 'Exatamente. Próximo!'],
+    partial: ['Funciona, mas numa entrevista eu perguntaria: dá para fazer melhor?', 'Passou, mas tem espaço para otimizar.'],
+    wrong: ['Não. Pensa na complexidade.', 'Hmm, reveja isso.', 'Não é essa. Qual estrutura de dados ajuda aqui?'],
+    testsFail: ['Alguns testes falharam. Olhe os casos de borda: lista vazia, um elemento, duplicados…', 'Ainda não. Compare o esperado com o obtido.'],
+  },
+});

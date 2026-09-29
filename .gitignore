@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Claude Code (arquivos locais da sessão)
+.claude/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Segredos: a chave do assistente fica em ~/.code-interview-quest/assistant.json, mas por garantia
+assistant.json
+.env

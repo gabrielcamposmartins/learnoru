@@ -1,0 +1,3 @@
+# Necessário apenas para validar o conteúdo (tools/validate-content.js).
+# O jogo em si roda no navegador e baixa o pytest para o Pyodide sozinho.
+pytest>=8

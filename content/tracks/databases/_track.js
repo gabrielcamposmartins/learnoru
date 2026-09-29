@@ -1,0 +1,30 @@
+Game.registerTrack({
+  id: 'databases',
+  title: 'Bancos de Dados',
+  icon: '🗄️',
+  color: '#a3e635',
+  order: 6,
+  character: 'lia',
+  characterRole: 'Instrutora · Bancos de Dados',
+  description: 'SQL de verdade (SQLite no navegador), window functions, índices e planos de execução, transações e isolamento, NoSQL, replicação e sharding.',
+  units: [
+    { id: 'sql', title: 'SQL na prática', description: 'Consultas, joins, agregações, window functions e CTEs recursivas.' },
+    { id: 'performance', title: 'Performance & modelagem', description: 'Índices, EXPLAIN, normalização e o problema N+1.' },
+    { id: 'consistencia', title: 'Transações & consistência', description: 'ACID, níveis de isolamento, anomalias e locks.' },
+    { id: 'escala', title: 'Escala & dados distribuídos', description: 'NoSQL, replicação, sharding, consistent hashing, outbox e CDC.' },
+    { id: 'entrevistas', title: 'Entrevistas', description: 'Modelagem e decisões de banco em entrevista.' },
+  ],
+  intro: [
+    'Bem-vindo(a) à trilha de **Bancos de Dados**! Aqui você escreve **SQL de verdade** — um SQLite roda no seu navegador.',
+    'Vamos de consultas a planos de execução, de transações a sharding — com vários conceitos que derrubam gente experiente, como **write skew** e **lógica de três valores**.',
+  ],
+  lines: {
+    ask: ['Qual consulta/decisão você escolheria?', 'Pense no que o banco faz por baixo.'],
+    askOpen: ['Explique como faria numa revisão de schema.', 'Quais os trade-offs dessa escolha de banco?'],
+    askCode: ['Hora de escrever. Rode antes de enviar!', 'Implemente — pense em volume de dados.'],
+    correct: ['Isso! Consulta limpa e correta.', 'Perfeito — o banco agradece.', 'Exatamente.'],
+    partial: ['Correto, mas dá para deixar melhor.', 'Bom! Alguns detalhes ficaram de fora.'],
+    wrong: ['Hmm, não é isso. Pense nos NULLs e nas duplicatas.', 'Não exatamente — o que o banco faria aqui?'],
+    testsFail: ['O resultado não bateu. Compare linha a linha com o esperado.', 'Ainda não — confira joins, filtros e agrupamentos.'],
+  },
+});

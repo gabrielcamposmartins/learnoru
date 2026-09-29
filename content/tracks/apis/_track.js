@@ -1,0 +1,30 @@
+Game.registerTrack({
+  id: 'apis',
+  title: 'APIs & Integração',
+  icon: '🔌',
+  color: '#38bdf8',
+  order: 5,
+  character: 'lia',
+  characterRole: 'Instrutora · APIs & Integração',
+  description: 'HTTP e REST a fundo, versionamento, idempotência, cache, rate limiting, resiliência (retries, circuit breaker), segurança e estilos de integração.',
+  units: [
+    { id: 'fundamentos', title: 'Fundamentos', description: 'HTTP de verdade: métodos, status, cabeçalhos — e o que torna uma API "REST".' },
+    { id: 'design', title: 'Design & evolução', description: 'Paginação, erros, versionamento, idempotência e cache HTTP.' },
+    { id: 'confiabilidade', title: 'Confiabilidade', description: 'Rate limiting, timeouts, retries com jitter, circuit breaker, bulkhead e load shedding.' },
+    { id: 'seguranca', title: 'Segurança', description: 'Autenticação, autorização, OAuth 2.0, JWT e o OWASP API Top 10.' },
+    { id: 'arquitetura', title: 'Arquitetura de integração', description: 'GraphQL, gRPC, webhooks, gateways, BFF e contratos.' },
+    { id: 'entrevistas', title: 'Entrevistas', description: 'Desenhar uma API de ponta a ponta.' },
+  ],
+  intro: [
+    'Bem-vindo(a) à trilha de **APIs**! Toda empresa vive de integrações — e quase todo incidente grave passa por uma.',
+    'Vamos além do CRUD: **idempotência**, **versionamento** sem quebrar clientes, **rate limiting**, **retries com jitter**, **circuit breaker**… e vários termos que talvez você nunca tenha ouvido.',
+  ],
+  lines: {
+    ask: ['Qual você escolheria para a API?', 'Pensa no cliente da API: qual a melhor opção?'],
+    askOpen: ['Como você explicaria isso numa revisão de design de API?', 'Me convença: por que essa decisão?'],
+    askCode: ['Hora de implementar. Pense em como isso se comporta sob falha.', 'Implemente — e lembre que a rede sempre falha no pior momento.'],
+    correct: ['Isso! Uma API assim aguenta produção.', 'Perfeito — seus clientes agradecem.', 'Exatamente.'],
+    partial: ['Funciona, mas pense no que acontece quando a rede falha.', 'Bom! Alguns detalhes de robustez ficaram de fora.'],
+    wrong: ['Hmm, isso quebraria clientes em produção.', 'Não exatamente — pense no contrato da API.'],
+  },
+});
