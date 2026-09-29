@@ -112,9 +112,10 @@
             h('span', { class: 'hero-next-title' }, `${next.track.icon} ${next.module.title}`),
             h('span', { class: 'hero-next-sub' }, nextSub(next))) : null,
           hostDialog.el,
-          actions,
-          ask.el),
-        h('div', { class: 'hero-char' }, hostView.el));
+          actions),
+        h('div', { class: 'hero-char' }, hostView.el),
+        // Painel "Perguntar à Lia": faixa própria abaixo do texto e da Lia (ela fica no lugar ao abrir).
+        ask.el);
 
       // ── Estatísticas ──
       const days = Store.recentDays(7);

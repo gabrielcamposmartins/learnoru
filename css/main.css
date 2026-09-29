@@ -364,7 +364,9 @@ button { font-family: inherit; }
 .ask-send { flex: none; width: 46px; height: 46px; padding: 0; }
 .ask-panel.busy .ask-send { opacity: .75; }
 .ask-hint { padding: 0 16px 10px; font-size: 11px; color: var(--muted); }
-.ask-home { margin-top: 4px; max-width: 720px; height: 440px; }
+/* Na tela inicial o painel ocupa uma linha inteira do hero, abaixo do texto e da Lia. */
+.ask-home { grid-column: 1 / -1; height: 420px; margin: 0 0 28px; }
+.ask-home .ask-msg { max-width: min(94%, 860px); }
 .assistant-using { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 13px; color: var(--text-2); }
 .assistant-using .dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--warn); }
 .assistant-using.ok .dot { background: var(--good); box-shadow: 0 0 8px var(--good); }

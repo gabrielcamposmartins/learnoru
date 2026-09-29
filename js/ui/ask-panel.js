@@ -227,6 +227,9 @@
       if (isOpen) {
         refreshStatus();
         log.scrollTop = log.scrollHeight;
+        // Na tela inicial o painel pode abrir abaixo da dobra: rola só o necessário para mostrá-lo.
+        const r = el.getBoundingClientRect();
+        if (r.bottom > window.innerHeight || r.top < 0) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         clearTimeout(focusTimer);
         focusTimer = setTimeout(() => input.focus({ preventScroll: true }), 30);
       }
